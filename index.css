@@ -1,0 +1,87 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+    background:linear-gradient(rgb(238, 222, 222),rgb(235, 10, 10),rgb(20, 17, 17));
+    background-size: cover;
+    height: 100vh;
+}
+h1{
+font-weight: 10px;
+font-size: 6ch;
+color: rgb(85, 13, 13);
+}
+.container{
+    position: relative;
+    margin: 100px auto 0 auto;
+    width: 350px;
+    perspective: 1000px;
+}
+.carosel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate 45s infinite forwards linear;
+}
+.image{
+    position: absolute;
+    width: 310px;
+    height: 225px;
+    top: 20px;
+    left: 10px;
+    background-size: cover;
+    background-color: rgba(141, 133, 133, 0.199);
+    display: flex;
+}
+span{
+    margin: auto;
+    font-size: 30px;
+}
+@keyframes rotate{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+.image:nth-child(1){
+    background-image: url("https://cdn.pixabay.com/photo/2018/05/12/08/21/daisy-3392654__340.jpg");
+    transform: rotateY(0deg) translateZ(430px);
+}
+.image:nth-child(2){
+    background-image: url("https://cdn.pixabay.com/photo/2018/02/12/10/45/heart-3147976__340.jpg");
+    transform: rotateY(40deg) translateZ(430px);
+}
+.image:nth-child(3){
+    background-image: url("https://cdn.pixabay.com/photo/2018/01/03/21/38/moon-3059324__340.jpg");
+    transform: rotateY(80deg) translateZ(430px);
+}
+.image:nth-child(4){
+    background-image: url("https://cdn.pixabay.com/photo/2016/01/13/05/55/heart-1137259__340.jpg");
+    transform: rotateY(120deg) translateZ(430px);
+}
+.image:nth-child(5){
+    background-image: url("https://cdn.pixabay.com/photo/2018/03/10/20/38/heart-3215210__340.jpg");
+    transform: rotateY(160deg) translateZ(430px);
+}
+.image:nth-child(6){
+    background-image: url("https://cdn.pixabay.com/photo/2017/02/07/09/55/happy-valentines-day-2045463__340.png");
+    transform: rotateY(200deg) translateZ(430px);
+}
+.image:nth-child(7){
+    background-image: url("https://cdn.pixabay.com/photo/2018/01/27/17/43/candle-3111760__340.jpg");
+    transform: rotateY(240deg) translateZ(430px);
+}
+.image:nth-child(8){
+    background-image: url("https://cdn.pixabay.com/photo/2016/04/02/00/04/valentines-day-1301918__340.png");
+    transform: rotateY(280deg) translateZ(430px);
+}
+.image:nth-child(9){
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/28/14/57/sea-1111483__340.jpg");
+    transform: rotateY(320deg) translateZ(430px);
+}
+.image:nth-child(10){
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/22/23/35/pair-2879673__340.png");
+    transform: rotateY(360deg) translateZ(430px);
+}
